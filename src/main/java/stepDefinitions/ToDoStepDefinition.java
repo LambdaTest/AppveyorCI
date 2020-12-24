@@ -24,7 +24,6 @@ public class ToDoStepDefinition {
 		String browser = Configuration.readConfig("browser");
 		String version = Configuration.readConfig("version");
 		String os = Configuration.readConfig("os");
-		String res = Configuration.readConfig("resolution");
 
 		String username = System.getenv("LT_USERNAME") != null ? System.getenv("LT_USERNAME") : Configuration.readConfig("LambdaTest_UserName");
 		String accesskey = System.getenv("LT_ACCESS_KEY") != null ? System.getenv("LT_ACCESS_KEY") : Configuration.readConfig("LambdaTest_AppKey");
@@ -35,13 +34,8 @@ public class ToDoStepDefinition {
 		capability.setCapability(CapabilityType.BROWSER_NAME, browser);
 		capability.setCapability(CapabilityType.VERSION, version);
 		capability.setCapability(CapabilityType.PLATFORM, os);
-		capability.setCapability("screen_resolution", res);
 		capability.setCapability("build", "Cucumber-Selenium-TestNG Test");
-		capability.setCapability("name", "Cucumber-Selenium-TestNG");
-		capability.setCapability("network", true);
-		capability.setCapability("video", true);
-		capability.setCapability("console", true);
-		capability.setCapability("visual", true);
+		capability.setCapability("name", "Cucumber-Selenium-TestNG AppveyorCI");
 
 		String gridURL = "https://" + username + ":" + accesskey + "@hub.lambdatest.com/wd/hub";
 		driver = new RemoteWebDriver(new URL(gridURL), capability);
