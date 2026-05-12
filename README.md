@@ -1,5 +1,5 @@
 
-# Cucumber TestNG Selenium — TestMu AI (Formerly LambdaTest)
+# Cucumber TestNG Selenium — TestMu AI (Formerly LambdaTest)
 ### Environment Setup
 
 1. Global Dependencies
