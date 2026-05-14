@@ -13,7 +13,7 @@
 With TestMu AI (Formerly LambdaTest), you can run Cucumber TestNG Selenium tests triggered through an AppVeyor CI pipeline on a scalable cloud browser grid. This sample shows how to configure AppVeyor CI to run on the TestMu AI cloud.
 
 - [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
-- Follow the documentation on [AppVeyor CI Integration with TestMu AI](https://www.testmuai.com/support/docs/appveyor-ci-integration-with-lambdatest/) (Formerly LambdaTest) for the full setup walkthrough.
+- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/) for the full setup walkthrough.
 
 ### Prerequisites
 
